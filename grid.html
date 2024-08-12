@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+       *{
+            margin: 0;
+            padding:0 ;
+            
+        }
+        .container{
+            border: 2px solid red;
+            height:70vh ;
+            display: grid;
+            grid-template-columns:200px 200px 200px; 
+            grid-template-columns: 1fr 1fr 1fr (repeat(3 , 1fr));,(repeat(auto-fill, 100px))
+            grid-template-columns: repeat(3 , 1fr);
+            /*grid-template-rows:100px 100px;*/
+            gap: 20px;
+            
+        } 
+        .box{
+            background-color:cornflowerblue ;
+            border:2px solid coral ;
+
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-column: 1/span 3;
+            grid-area: 2/2/4/3;
+        }
+        #box-3{
+             grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #box-4{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+    
+    <body>
+        <!--.container>.box#box-${box-$}*8-->
+        <div class="container">
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-1">box-1</div>
+        </div>
+    
+    </body>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --primary-color: black;
+            --primary-background-color: aliceblue;
+            --secondar-color: rgb(101 , 101 , 101);;
+            --secondary-background-color:2px solid black;
+            --margin-width:20px;
+            --primary-border: 2px solid black;
+
+        }
+        .dark{
+             --primary-color: rgb(246, 243, 243);
+            --primary-background-color: rgb(230, 238, 246);
+            --secondar-color: rgb(101 , 101 , 101);;
+            --secondary-background-color: rgb(251, 75, 75);
+            --margin-width:rgb(238, 215, 215);
+            --primary-border: 2px solid rgb(220, 175, 175);
+
+
+        }
+        body{
+            text-align:center ;
+            background-color: var(--primary-background-color) 
+;
+        }
+        #heading{
+            color:var(--primary-color);
+        }
+
+        .box{
+            background-color: --secondary-background-color;
+            color: var(--secondar-color);
+            padding: var(--margin-width) ;
+            margin:  var(--margin-width);
+            border:var(--primary-border) ;
+            border-radius:var(--margin-width);
+        }
+    </style>
+</head>
+<body class="dark">
+    <h1 id="headline">Tourist places</h1>
+    <div class="box">
+        <h3>Hills</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus laboriosam totam ullam error nulla expedita!
+        </p> 
+    </div>
+    <div class="box">
+        <h3>waterfall</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus laboriosam totam ullam error nulla expedita!
+        </p>
+    </div>
+    <div class="box">
+        <h3>lakes</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus laboriosam totam ullam error nulla expedita!
+        </p>
+    </div>
+
+</body>

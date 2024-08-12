@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table with Rowspan, Colspan, and Background Image</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyJ1ApQpD5F4kznaEuXhXPLzVeEZfbgFMipg&s');
+            
+            background-size: cover;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Header 1</th>
+            <th colspan="2">Header 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Content 1</td>
+            <td>Content 2</td>
+            <td>Content 3</td>
+            <td>Content 4</td>
+        </tr>
+        <tr>
+            <td>Content 5</td>
+            <td colspan="2">Content 6</td>
+        </tr>
+        <tr>
+            <td colspan="4">Footer</td>
+        </tr>
+    </table>
+</body>
+
+</html>
